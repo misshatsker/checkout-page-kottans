@@ -9,7 +9,9 @@ body {
 }
 
 .button-goBack,
-.button-signIn {
+.button-signIn,
+.button-placeOrder,
+.button-printAQuote {
     cursor: pointer;
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -19,18 +21,35 @@ body {
     padding: calc(.875rem - 1px) calc(1.5rem - 1px);
 }
 
+.button-placeOrder {
+    background-color: rgba(154, 238, 232, 0.773);
+
+}
+
 .button-goBack:hover,
-.button-goBack:focus {
+.button-goBack:focus,
+.button-signIn:hover,
+.button-signIn:focus,
+.button-placeOrder:hover,
+.button-placeOrder:focus,
+.button-printAQuote:hover,
+.button-printAQuote:focus {
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: rgba(0, 0, 0, 0.65);
 }
 
-.button-goBack:hover {
+.button-goBack:hover,
+.button-signIn:hover,
+.button-placeOrder:hover,
+.button-printAQuote:hover {
     transform: translateY(-1px);
 }
 
-.button-goBack:active {
+.button-goBack:active,
+.button-signIn:active,
+.button-placeOrder:active,
+.button-printAQuote:active {
     background-color: rgb(214, 234, 234);
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
@@ -61,25 +80,6 @@ body {
     width: 60px;
 }
 
-.button-signIn:hover,
-.button-signIn:focus {
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(0, 0, 0, 0.65);
-}
-
-.button-signIn:hover {
-    transform: translateY(-1px);
-}
-
-.button-signIn:active {
-    background-color: rgb(214, 234, 234);
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-    color: rgba(0, 0, 0, 0.65);
-    transform: translateY(0);
-}
-
 .mainSection {
     margin: 40px 100px;
     background-color: white;
@@ -88,3 +88,61 @@ body {
     box-shadow:  rgb(0, 0, 0) 0px 0px 2px 0px;
     box-sizing: border-box;
 }
+
+.yourOrder {
+    display: flex;
+    align-items: center;
+}
+
+.img-yourOrder {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.header3Uppercase {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.headers4-Uppercase {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.yourOrder-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainSection-headerLeft {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.unite-yourOrder-items {
+    width: 100%;
+}
+
+.mainSection-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.yourOrder-buttons-placeOrder {
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.button-placeOrder,
+.button-printAQuote {
+    width: 150px;
+}  
+
+.button-simpleInfo {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
