@@ -120,7 +120,16 @@ body {
     display: flex;
     align-items: center;
     width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgb(118 165 165) 0px 0px 0px 0px;
+    margin-right: 21px;
 }
+
+.mainSection-headerRight {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgb(118 165 165) 0px 0px 0px 0px;
+}
+
 
 .unite-yourOrder-items {
     width: 100%;
@@ -146,3 +155,9 @@ body {
     font-weight: 500;
 }
 
+
+
+.mainPage-header {
+    text-transform: uppercase;
+    text-align: center;
+}
